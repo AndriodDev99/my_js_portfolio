@@ -1,0 +1,13 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    overflow:  hidden;
+}
+
+#instructions {
+    width: 100%;
+    color: yellow;
+    height: 80%;
+    background-color: #333;
+    overflow-y: scroll;
+}

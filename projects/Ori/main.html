@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+    
+</head>
+<body onload="init();">
+    
+    <video id="sink" loop="loop" preload="auto" controls="controls" width="400">
+
+        <source src="sink.mp4video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+        <source src="sink.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+         
+        <source src="sink.webmvp8.webm" type='video/webm; codec="vp8, vorbis"'>
+        
+    </video> 
+     
+    <video id="talk" loop="loop" preload="auto" controls="controls">
+
+      <source src="talk.mp4video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+
+        <source src="talk.theora.ogv" type='video/ogg; codecs="theora, vorbis"'>
+
+        <source src="talk.webmvp8.webm" type='video/webm; codec="vp8, vorbis"'>
+    </video> 
+     
+    <canvas id="canvas" width="900" height="480">
+
+    </canvas>
+    <br/> 
+
+    <div id="directions"> Press buttons to advance or go back </div>
+    <hr/>
+
+    <button onClick="goback();" style="color: #F00">Go back </button>
+    <button onClick="donext();" style="color: #03F">Next step </button>
+    <script src="script.js"></script>
+</body>
+</html>
